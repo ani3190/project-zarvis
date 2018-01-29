@@ -96,7 +96,7 @@ public class MainContainer {
 			new Thread(runnable).start();
 			
 			while (true) {
-				Thread.sleep(300000);
+				Thread.sleep(30000);
 				boolean finished = true;
 				for (CustomerAgent customerAgent : customerAgentsList) {
 					if (!customerAgent.isFinished()) {

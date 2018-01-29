@@ -1,4 +1,4 @@
-package zarvis.bakery.models.junitTest;
+package zarvis.bakery.models;
 
 import static org.junit.Assert.*;
 
@@ -12,7 +12,7 @@ import org.junit.Test;
 import com.google.gson.Gson;
 import zarvis.bakery.models.Order;
 
-public class OrderJunitTest {
+public class OrderTest {
 
 	final String FILENAME = "src/main/test/Order.json";
 

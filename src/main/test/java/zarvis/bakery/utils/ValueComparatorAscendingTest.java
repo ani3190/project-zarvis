@@ -1,4 +1,4 @@
-package zarvis.bakery.utils.junitTest;
+package zarvis.bakery.utils;
 
 import static org.junit.Assert.*;
 
@@ -7,7 +7,7 @@ import java.util.HashMap;
 import org.junit.Test;
 import zarvis.bakery.utils.ValueComparatorAscending;
 
-public class ValueComparatorAscendingJunitTest {
+public class ValueComparatorAscendingTest {
 
 	@Test
 	public void compareTest() {

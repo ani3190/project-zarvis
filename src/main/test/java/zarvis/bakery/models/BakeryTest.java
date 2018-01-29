@@ -1,4 +1,4 @@
-package zarvis.bakery.models.junitTest;
+package zarvis.bakery.models;
 
 import static org.junit.Assert.*;
 import java.io.BufferedReader;
@@ -10,7 +10,7 @@ import com.google.gson.Gson;
 import zarvis.bakery.models.Bakery;
 
 
-public class BakeryJunitTest {
+public class BakeryTest {
 	final String FILENAME = "src/main/test/Bakery.json";
 	
 	@Test

@@ -1,4 +1,4 @@
-package zarvis.bakery.utils.junitTest;
+package zarvis.bakery.utils;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,7 @@ import java.util.TreeMap;
 import org.junit.Test;
 import zarvis.bakery.utils.Util;
 
-public class UtilJunitTest {
+public class UtilTest {
 
 	@Test
 	//for testing sortMapByvalue() method

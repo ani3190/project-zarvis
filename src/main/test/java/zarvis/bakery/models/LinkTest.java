@@ -1,4 +1,4 @@
-package zarvis.bakery.models.junitTest;
+package zarvis.bakery.models;
 
 import static org.junit.Assert.*;
 
@@ -13,7 +13,7 @@ import com.google.gson.Gson;
 
 import zarvis.bakery.models.Link;
 
-public class LinkJunitTest {
+public class LinkTest {
 
 	final String FILENAME = "src/main/test/Link.json";
 
