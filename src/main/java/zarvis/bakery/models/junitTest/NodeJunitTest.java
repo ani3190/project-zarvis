@@ -13,8 +13,7 @@ import zarvis.bakery.models.Node;
 
 public class NodeJunitTest {
 
-	//final String FILENAME = "src/main/test/Node.json";
-	final String FILENAME = "/home/yassine/WS17_yboukn2s/project-zarvis/src/main/test/Node.json";
+	final String FILENAME = "src/main/test/Node.json";
 
 	@Test
 	public void test() throws UnsupportedEncodingException, IOException {

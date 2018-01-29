@@ -11,8 +11,7 @@ import com.google.gson.Gson;
 import zarvis.bakery.models.StreetNetwork;
 
 public class StreetNetworkJunitTest {
-	//final String FILENAME = "src/main/test/StreetNetwork.json";
-	final String FILENAME = "/home/yassine/WS17_yboukn2s/project-zarvis/src/main/test/StreetNetwork.json";
+	final String FILENAME = "src/main/test/StreetNetwork.json";
 
 			@Test
 			public void test() throws UnsupportedEncodingException, IOException {

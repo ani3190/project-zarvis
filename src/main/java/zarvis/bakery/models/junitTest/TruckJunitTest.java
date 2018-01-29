@@ -11,8 +11,7 @@ import zarvis.bakery.models.Truck;
 
 public class TruckJunitTest {
 
-	//final String FILENAME = "src/main/test/Truck.json";
-	final String FILENAME = "/home/yassine/WS17_yboukn2s/project-zarvis/src/main/test/Truck.json";
+	final String FILENAME = "src/main/test/Truck.json";
 
 	@Test
 	public void test() throws UnsupportedEncodingException, IOException {

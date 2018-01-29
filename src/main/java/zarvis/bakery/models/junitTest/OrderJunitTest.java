@@ -15,7 +15,6 @@ import zarvis.bakery.models.Order;
 public class OrderJunitTest {
 
 	final String FILENAME = "src/main/test/Order.json";
-	//final String FILENAME = "/home/yassine/WS17_yboukn2s/project-zarvis/src/main/test/Order.json";
 
 	@Test
 	public void test() throws UnsupportedEncodingException, IOException {

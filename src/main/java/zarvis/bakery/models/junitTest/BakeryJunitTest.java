@@ -11,8 +11,7 @@ import zarvis.bakery.models.Bakery;
 
 
 public class BakeryJunitTest {
-	//final String FILENAME = "src/main/test/Bakery.json";
-	final String FILENAME = "/home/yassine/WS17_yboukn2s/project-zarvis/src/main/test/Bakery.json";
+	final String FILENAME = "src/main/test/Bakery.json";
 	
 	@Test
 	public void test() throws UnsupportedEncodingException, IOException {

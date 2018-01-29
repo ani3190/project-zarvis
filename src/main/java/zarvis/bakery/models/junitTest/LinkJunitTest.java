@@ -15,8 +15,7 @@ import zarvis.bakery.models.Link;
 
 public class LinkJunitTest {
 
-	//final String FILENAME = "src/main/test/Link.json";
-		final String FILENAME = "/home/yassine/WS17_yboukn2s/project-zarvis/src/main/test/Link.json";
+	final String FILENAME = "src/main/test/Link.json";
 
 				@Test
 				public void test() throws UnsupportedEncodingException, IOException {

@@ -12,7 +12,6 @@ import zarvis.bakery.models.Customer;
 
 public class CustomerJunitTest {
 	final String FILENAME = "src/main/test/Customer.json";
-	//final String FILENAME = "/home/yassine/WS17_yboukn2s/project-zarvis/src/main/test/Customer.json";
 
 	@Test
 	public void test() throws UnsupportedEncodingException, IOException {
