@@ -7,7 +7,6 @@ import jade.core.Runtime;
 import jade.util.ExtendedProperties;
 import jade.util.leap.Properties;
 import jade.wrapper.AgentContainer;
-import jade.wrapper.StaleProxyException;
 import javafx.application.Application;
 import zarvis.bakery.Gui.MainApp;
 import zarvis.bakery.agents.BakeryAgent;
@@ -31,8 +30,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 public class MainContainer {
 	public static void main(String[] args) {
-		double MAXTIME=3*(Math.pow(10,12));
-		boolean isRunning = true;
 		
 		try {
 			//Delay for 5 seconds to wait for all to initialize
@@ -98,20 +95,20 @@ public class MainContainer {
 			Runnable runnable = () -> Application.launch(MainApp.class);
 			new Thread(runnable).start();
 			
-			while (isRunning) {
-				Thread.sleep(200);
-				if(System.currentTimeMillis() > MAXTIME){
-					isRunning = false;
+			while (true) {
+				Thread.sleep(300000);
+				boolean finished = true;
+				for (CustomerAgent customerAgent : customerAgentsList) {
+					if (!customerAgent.isFinished()) {
+						finished = false;
+					}
+				}
+				if (finished) {
+					logger.info("All customers are done, exit the platform...");
+					mainContainer.kill();
 					break;
 				}
 			}
-			
-			try{
-				mainContainer.kill();
-			}
-			catch (StaleProxyException e) {
-					logger.error("ProxyException",e);
-			} 
 			
 		} catch (Exception e) {
 			e.printStackTrace();
